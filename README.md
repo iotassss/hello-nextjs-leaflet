@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## react-leaflet導入の参考にした記事
+
+https://qiita.com/ccHarvestasya/items/047fb3bff7b2177f1491
+
 ## Getting Started
 
 First, run the development server:
