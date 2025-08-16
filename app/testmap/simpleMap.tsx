@@ -5,17 +5,18 @@ import './initLeaflet';
 import './simpleMap.css';
 
 const simpleMap = () => {
-  const position = new LatLng(33.59337, 130.35152); // 福岡タワー
+  // const position = new LatLng(33.59337, 130.35152); // 福岡タワー
+  const position = new LatLng(35.79803, 139.77120); // 福岡タワー
 
   return (
-    <MapContainer center={position} zoom={13}>
+    <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
       <TileLayer
-        attribution='© <a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>'
-        url="https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={position}>
         <Popup>
-          PopUp!! PopUp!! PopUp!! <br /> ポップアップ
+          A pretty CSS3 popup. <br /> Easily customizable.
         </Popup>
       </Marker>
     </MapContainer>
